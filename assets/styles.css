@@ -1,0 +1,138 @@
+@import url("https://font.googleapis.com/css?family=Monstserrat:400,500,600,700|Poppins:400,500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.container {
+  background: url(https://images6.alphacoders.com/459/459669.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.container::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.174);
+}
+/*Estilo do Form*/
+.content {
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+  text-align: center;
+  padding: 60px 32px;
+  width: 370px;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.133);
+  border: 1px solid #fff;
+  backdrop-filter: blur(3px);
+  box-shadow: 0 0 6px 0 rgba(29, 29, 29, 0.203);
+}
+
+/* Nome Login na Parte Superior*/
+.content P {
+  color: #000080;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0 0 35px 0;
+  font-family: "Monstserrat", sans-serif;
+}
+/*Local no qual vai ficar o input do form*/
+.field {
+  position: relative;
+  height: 45px;
+  width: 100%;
+  display: flex;
+  background: rgba(255, 255, 255, 0.94);
+}
+/* Emblema de usuário e de senha*/
+.field span {
+  color: #222;
+  width: 40px;
+  line-height: 45px;
+}
+
+/* Input do form*/
+.field input {
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #222;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Espaçamento entre os inputs*/
+.space {
+  margin-top: 16px;
+}
+
+/* Opçao de vizualizar a senha*/
+.show {
+  position: absolute;
+  right: 13px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #222;
+  display: none;
+  cursor: pointer;
+  font-family: "Monstserrat", sans-serif;
+}
+
+/*Mostra a opção de visualizar a senha ao digitar*/
+.password-field:valid ~ .show {
+  display: block;
+}
+
+/* Esqueci a senha*/
+.pass {
+  text-align: left;
+  margin: 10px 0;
+}
+/* Esqueci a senha 2*/
+.pass a {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+/* Esqueci a senha 3*/
+.pass:hover {
+  text-decoration: underline;
+}
+
+/* Estilo do botão de Login*/
+.field input[type="submit"] {
+  background: #000080;
+  border: 1px solid #4682b4;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Monstserrat", sans-serif;
+  transition: 0.3s ease;
+}
+
+.field input[type="submit"]:hover {
+  background: #4682b4;
+}
+
+/* Efeito ao passar o mouse no botão*/
+.login {
+  color: white;
+  margin: 20px 0;
+  font-family: "Poppins", sans-serif;
+}

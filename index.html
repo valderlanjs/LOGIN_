@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/fc56f75742.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Login</title>
+  </head>
+  <body>
+    <header class="container">
+      <div class="content">
+        <p>LOGIN</p>
+
+        <!--Formulário-->
+        <form action="#">
+          <!--Input para colocar o Login-->
+          <div class="field">
+            <span class="fa fa-user"></span>
+            <input type="text" required placeholder="Entrar com Email" />
+          </div>
+
+          <!--Input senha-->
+          <div class="field space">
+            <span class="fa fa-lock"></span>
+            <input
+              class="password-field"
+              type="password"
+              required
+              placeholder="Senha"
+            />
+            <!--Opção de vizualizar a senha-->
+            <span class="show">Show </span>
+          </div>
+
+          <div class="pass">
+            <a href="#">Esqueci a senha?</a>
+          </div>
+
+          <!--Botão de Login-->
+          <div class="field">
+            <input type="submit" value="LOGIN" />
+          </div>
+        </form>
+      </div>
+    </header>
+    <script src="./scrip.js"></script>
+  </body>
+</html>
